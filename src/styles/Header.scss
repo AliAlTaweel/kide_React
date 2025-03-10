@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: column;
+
+
+    .lang{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    img{
+        width: 10%;
+        height: 10%;
+        margin-bottom: 2rem;
+    }
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    p{
+        font-size: 1.1em;
+        text-align: center;
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 50%;
+            height: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h1{
+            font-size: 2em;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 1.5em;
+          
+        }
+        
+    }
+}
+
+.container{
+    margin: 2rem 5rem;
+}

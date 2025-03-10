@@ -1,0 +1,36 @@
+:root{
+    --footer-background-color: #5B898C;
+    --footer-text-color: #FFFFFF;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    padding: 20px 0;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: fit-content;
+
+    .col01{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 21%;
+    }
+    @media screen and (max-width: 768px){
+        .footer{
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px;
+            gap: 1rem;
+          
+        }
+        
+    }
+}

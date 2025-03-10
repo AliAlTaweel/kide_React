@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #194D50;
+    --background-color:#ECF5F5 ;
+    --text-color:#266164;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section02 {
+    background-color: #DDECEC;
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        color: var(--text-color);
+        margin-bottom: 2rem;
+    }
+
+    .sec02Image{
+        margin-bottom: 2rem;
+        size: 80%;
+    }
+    .sec02Text{
+        color: var(--text-color);
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .title{
+            font-size: 1.5rem;
+        }
+        .sec02Image{
+                margin-bottom: 1rem;
+                width: 60%;
+            }
+            .sec02Text{
+                display: none;
+            }
+    }
+}
